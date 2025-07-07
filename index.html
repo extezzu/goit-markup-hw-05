@@ -329,6 +329,61 @@
                 </ul>
             </div>
         </section>
+        <section>
+            <div class="modal">
+                <div class="modal-content">
+                    <button class="modal-close" type="button">
+                        <svg class="close-icon" width="24" height="24">
+                            <use href="./images/icons.svg#closeIcon"></use>
+                        </svg>
+                    </button>
+                    <p class="modal-subtitle">Leave your contacts and we will call you back</p>
+                        <form class="modal-form">
+                            <div class="modal-input-wrapper">
+                                <label for="name">Name</label>
+                                    <div class="input-icon-wrapper">
+                                        <svg class="input-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#userIcon"></use>
+                                        </svg>
+                                    </div>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="modal-input-wrapper">
+                                <label for="phone">Phone</label>
+                                    <div class="input-icon-wrapper">
+                                        <svg class="input-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#phoneIcon"></use>
+                                        </svg>
+                                    </div>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="modal-input-wrapper">
+                                <label for="email">Email</label>
+                                    <div class="input-icon-wrapper">
+                                        <svg class="input-icon" width="16" height="16">
+                                            <use href="./images/icons.svg#emailIcon"></use>
+                                        </svg>
+                                    </div>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="modal-input-wrapper">
+                                <label for="comment">Comment</label>
+                                <textarea id="comment" name="comment" rows="7" placeholder="Text input"></textarea>
+                            </div>
+                        </form>
+                        <div class="modal-input-wrapper">
+                            <label for="checkbox" class="checkbox-label">
+                                <input type="checkbox" id="checkbox" name="checkbox" />
+                                    <span class="custom-checkbox"></span>
+                                    <p>I accept the terms and conditions of the <a href="#">Privacy Policy</a></p>
+                            </label>
+                        </div>
+                        <div class="modal-button-wrapper">
+                            <button class="modal-button" type="submit">Send</button>
+                        </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer -->
@@ -373,6 +428,17 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-subscribe">
+                <p class="footer-nav-text">Subscribe</p>
+                <form class="footer-form">
+                    <div class="footer-input-wrapper">
+                        <label for="email-footer" class="footer-email-input"></label>
+                        <input type="email" id="email-footer" name="email-footer" placeholder="E-mail">
+                    </div>
+                    <div class="footer-button-wrapper">
+                        <button class="footer-button" type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </footer>

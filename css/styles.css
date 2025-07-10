@@ -473,6 +473,7 @@ section {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-p);
+    margin-bottom: 16px;
 }
 
 .modal-form-group {
@@ -498,9 +499,9 @@ section {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
-    padding-left: 32px;
+    padding-left: 38px;
     outline: transparent;
-    transiton: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {

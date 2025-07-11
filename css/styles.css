@@ -575,6 +575,10 @@ section {
     fill: #F4F4FD;
 }
 
+.modal-form-privacy-link {
+    color: var(--color-pp);
+}
+
 .modal-form-button {
     display: block;
     min-width: 169px;

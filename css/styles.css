@@ -569,14 +569,10 @@ section {
     fill: transparent;
 }
 
-.modal-form-checkbox-wrapper input:checked + .modal-form-checkbox-label + .modal-form-checkbox-link  {
+.modal-form-checkbox-wrapper input:checked + .modal-form-checkbox-label .modal-form-checkbox-link {
     background-color: #404bbf;
     border: none;
-    fill: #f4f4fd;
-}
-
-.modal-form-privacy-link {
-    color: var(--color-pp);
+    fill: #F4F4FD;
 }
 
 .modal-form-button {

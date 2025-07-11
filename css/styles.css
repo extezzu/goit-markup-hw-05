@@ -569,7 +569,7 @@ section {
     fill: transparent;
 }
 
-.modal-form-checkbox-wrapper input:checked span {
+.modal-form-checkbox-wrapper input:checked + .modal-form-checkbox-label + .modal-form-checkbox-link  {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;

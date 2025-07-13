@@ -412,14 +412,25 @@ section {
 
 /* ======================== modal  === */
 .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 999;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container.is-open {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal-window {
@@ -427,15 +438,17 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
+    max-width: 408px;
+    max-height: 584px;
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    overflow-y: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    
 }
 
 .modal-close-button {
@@ -513,6 +526,7 @@ section {
     position: absolute;
     left: 16px;
     top: 50%;
+    fill: #2E2F42;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -567,6 +581,7 @@ section {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 7px;
 }
 
 .modal-form-checkbox-wrapper input:checked + .modal-form-checkbox-label .modal-form-checkbox-link {
@@ -581,6 +596,7 @@ section {
 
 .modal-form-button {
     display: block;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
@@ -593,9 +609,8 @@ section {
     background-color: #4D5AE5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
 }
-
-
 /* ======================== footer  === */
 
 .footer {
@@ -683,8 +698,7 @@ section {
 }
 
 .footer-subscribe {
-    display: flex;
-    flex-direction: column;
+    margin-left: auto;
 }
 
 
@@ -728,6 +742,12 @@ section {
     background-color: #4d5ae5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email-button:hover,
+.footer-email-button:focus {
+    background-color: #31d0aa;
 }
 
 .telegram-icon {
